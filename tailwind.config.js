@@ -9,6 +9,7 @@ export default {
         extend: {
       backgroundColor:{
         'mon_bg': "var(--mon__bg)",
+        'mon_bg2': "var(--mon__bg2)",
       },
       textColor:{
         'txt_white': "var(--white)",
@@ -22,4 +23,5 @@ export default {
   },
   plugins: [],
 },
+  },
 }

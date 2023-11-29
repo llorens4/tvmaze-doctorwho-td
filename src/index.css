@@ -13,7 +13,8 @@
 
 @layer base {
     :root {
-        --mon__bg: hsl(213, 98%, 16%);
+        --mon__bg: hsl(235, 38%, 6%);
+        --mon__bg2: hsl(279, 84%, 17%);
         --white: hsl(0, 0%, 100%);
         --primary__100: hsl(200, 100%, 37%);
         --primary__200: hsl(200, 60%, 94%);
