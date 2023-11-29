@@ -1,4 +1,6 @@
 import Head from "./components/Head";
+
+import Mydata from "./components/Mydata";
 export default function App() {
   return (
     <>
@@ -7,6 +9,8 @@ export default function App() {
       </header>
       <main className="h-min-screen bg-mo bg-star-pattern">
         <p>hello</p>
+        <Mydata/>
+
       </main>
       <footer>
         <p> hello</p>
