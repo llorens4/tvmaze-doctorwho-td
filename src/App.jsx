@@ -1,8 +1,8 @@
-import Head from '/Head.jsx'
+import Head from './components/Head'
 export default function App() {
   return (
     <>
-      <header>
+      <header className=''>
         <Head />
       </header>
       <main className="h-min-screen bg-star-pattern">

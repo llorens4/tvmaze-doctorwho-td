@@ -6,6 +6,14 @@ export default {
   ],
   theme: {
     extend: {
+        extend: {
+      backgroundColor:{
+        'mon_bg': "var(--mon__bg)",
+      },
+      textColor:{
+        'txt_white': "var(--white)",
+      },
+
       backgroundImage: {
         'star-pattern': "url('/stars-hires.png')",
         'galaxian-texture': "url('/space-hi-res.png')",

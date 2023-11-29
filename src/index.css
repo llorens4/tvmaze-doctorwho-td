@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "gotham-rounded-ssm-medium";
+    src: url("/gotham-rounded-ssm-medium.ttf");
+}
+
+
+@layer base {
+    :root {
+        --mon__bg: hsl(213, 98%, 16%);
+        --white: hsl(0, 0%, 100%);
+        --primary__100: hsl(200, 100%, 37%);
+        --primary__200: hsl(200, 60%, 94%);
+        --primary__300: hsl(200, 90%, 89%);
+    }
+}
