@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'star-pattern': "url('/stars-hires.png')",
+        'galaxian-texture': "url('/space-hi-res.png')",
+        'vortex-texture': "url('/page-space-background.707d4cca4aee555f43c23f52f1e8e759.png')"
+    },
   },
   plugins: [],
+},
 }
