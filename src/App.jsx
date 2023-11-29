@@ -1,16 +1,16 @@
 import Head from "./components/Head";
 
+
 import Mydata from "./components/Mydata";
 export default function App() {
   return (
     <>
-      <header className="">
+      <header className="flex bg-red-400">
         <Head />
       </header>
-      <main className="h-min-screen bg-mo bg-star-pattern">
+      <main className="h-min-screen w-screen bg-mon-bg bg-star-pattern">
         <p>hello</p>
-        <Mydata/>
-
+        <Mydata />
       </main>
       <footer>
         <p> hello</p>
