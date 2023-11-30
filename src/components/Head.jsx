@@ -9,7 +9,7 @@ export default function Head() {
         alt="logo doctor who"
         className="max-w-[15rem]"
       />
-      <div className="justify-between gap-6 text-2xl">
+      <div className="">
         <button>Accueil</button>
         <button>Episode</button>
         <button>Cast</button>
