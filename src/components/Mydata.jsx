@@ -5,7 +5,8 @@ import Cards from "./Cards";
 const Mydata = () => {
   let dataDoc = {};
 
-  const urlepisode = `https://api.tvmaze.com/shows/210/episodes?embed[]=episodes&embed[]=cast`;
+  // const urlepisode = `https://api.tvmaze.com/shows/210/episodes?embed[]=episodes&embed[]=cast?embed[]=seasons`;
+  const urlepisode = `https://api.tvmaze.com/shows/210?embed[]=cast&embed[]=seasons&embed[]=episodes`;
 
   const [url, setUrl] = useState(urlepisode);
 
@@ -14,8 +15,8 @@ const Mydata = () => {
 
   if (data) {
     dataDoc = {
-      img: data[0].image.medium,
-      summary: data.summary,
+      seasons: data._embedded.seasons,
+      episodes: data._embedded.episodes,
     };
   }
 
@@ -23,7 +24,7 @@ const Mydata = () => {
     <>
       {isLoading && <p>Chargement...</p>}
       {isError && <p>une erreur est survenue...</p>}
-      {data && <Cards data={data} />} 
+      {data && <Cards seasons={dataDoc.seasons} episodes={dataDoc.episodes} />}
     </>
   );
 };
