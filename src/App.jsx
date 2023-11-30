@@ -13,7 +13,7 @@ export default function App() {
       <main className="flex flex-col h-min-screen w-max-screen bg-mon-bg bg-galactic font-BBC bg-cover text-white">
         <Home />
         <Mydata />
-        <Gallery />
+
       </main>
 
       <footer>

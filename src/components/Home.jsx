@@ -7,10 +7,10 @@ export default function Home() {
           alt="logo doctor who"
           className="justify-center px-6 py-6 aspect-auto"
         />
-        <h1 className="font-CCtimelord text-6xl pt-12">Doctor Who</h1>
+        <h1 className="font-CCtimelord text-6xl pt-12 pb-4">Doctor Who</h1>
 
         <div>
-          <h1 className="flex text-xl">
+          <h1 className="flex text-xl ">
             The Doctor and friends travel from the dawn of human history to
             distant alien worlds. And everywhere they go, they find adventure,
             terror, fun, chases, joy and monsters.
