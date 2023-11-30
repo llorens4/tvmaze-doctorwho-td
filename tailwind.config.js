@@ -16,6 +16,10 @@ export default {
       textColor: {
         "txt_white": "var(--white)",
       },
+            fontFamily: {
+        CCtimelord:['CCTimelord.ttf'],
+        BBC:['BBCReithSans_W_Rg.woff'],
+      },
     },
   },
   plugins: [],
