@@ -36,7 +36,7 @@ const Mydata = () => {
       {isError && <p>une erreur est survenue...</p>}
       {data && <Cards seasons={dataDoc.seasons} episodes={dataDoc.episodes} casts={dataDoc.cast}/>}
     </>
-    </>
+    
   );
 };
 
