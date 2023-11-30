@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Cards({ url }) {
+export default function Cards({ url, idimage }) {
   // seasons est un tableau contenant toutes les saisons
   // episodes est un tableau contenant tous les épisodes
 
@@ -17,24 +17,12 @@ export default function Cards({ url }) {
         </h3>
 
         <ul className=" text-2xl text-white flex flex-wrap justify-center ">
-          {seasons.map((saison, i) => (
-            <li key={saison.id}>
-              <button
-                data-saison={i + 1}
-                onClick={handlerClick}
-                className="mx-4 py-2 transition-all duration-500 text-white hover:text-gold border-b-gold"
-              >
-                Saison {saison.number}
-              </button>
+          {url.map((idimage, i) => (
+            <li key={idimage.id}>
+              <img src={url} alt="" />
             </li>
           ))}
         </ul>
-
-        <div className="flex flex-wrap justify-center">
-          {episodesSaison.map((episode) => (
-            <EpisodeCard data={episode} id={episode.id} />
-          ))}
-        </div>
       </div>
     </>
   );

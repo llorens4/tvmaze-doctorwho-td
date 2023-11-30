@@ -24,6 +24,7 @@ const Mydata = () => {
 
     if (data2) {
       dataimg = {
+        idimage: data.id,
         url: data._resolution.original.url,
       };
     }
@@ -36,7 +37,7 @@ const Mydata = () => {
       
       {isLoading2 && <p>Chargement...</p>}
       {isError2 && <p>une erreur est survenue...</p>}
-      {data2 && <Gallery url={dataimg.url}/>}
+      {data2 && <Gallery url={dataimg.url} idimage={dataimg.idimage}/>}
     </>
   );
 };
