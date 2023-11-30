@@ -6,12 +6,12 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "CCTimelord.ttf";
+    font-family: "CCTimelord";
     src: url("/CCtimelord.ttf");
 }
 
 @font-face {
-    font-family: "BBCReithSans_W_Rg.woff";
+    font-family: "BBCReithSans_W_Rg";
     src: url("/BBCReithSans_W_Rg.woff");
 }
 

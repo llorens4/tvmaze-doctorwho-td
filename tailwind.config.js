@@ -17,8 +17,8 @@ export default {
         "txt_white": "var(--white)",
       },
             fontFamily: {
-        CCtimelord:['CCTimelord.ttf'],
-        BBC:['BBCReithSans_W_Rg.woff'],
+        CCtimelord:['CCTimelord'],
+        BBC:['BBCReithSans_W_Rg'],
       },
     },
   },
