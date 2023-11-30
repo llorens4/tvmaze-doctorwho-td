@@ -17,6 +17,7 @@ const Mydata = () => {
     dataDoc = {
       seasons: data._embedded.seasons,
       episodes: data._embedded.episodes,
+      cast: data._embedded.cast,
     };
   }
 
@@ -24,7 +25,7 @@ const Mydata = () => {
     <>
       {isLoading && <p>Chargement...</p>}
       {isError && <p>une erreur est survenue...</p>}
-      {data && <Cards seasons={dataDoc.seasons} episodes={dataDoc.episodes} />}
+      {data && <Cards seasons={dataDoc.seasons} episodes={dataDoc.episodes} casts={dataDoc.cast}/>}
     </>
   );
 };

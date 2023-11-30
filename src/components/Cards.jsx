@@ -1,8 +1,10 @@
+
 import EpisodeCard from "./EpisodeCard";
+import Cast from "./Cast";
 
 import { useState } from "react";
 
-export default function Cards({ seasons, episodes }) {
+export default function Cards({ seasons, episodes, casts}) {
  
   
   // seasons est un tableau contenant toutes les saisons
@@ -12,8 +14,11 @@ export default function Cards({ seasons, episodes }) {
   const [saison, setSaison] = useState(1)
 
 
+
   // episodes est un tableau contenant tous les épisodes d'une saison
+        
   const episodesSaison = episodes.filter((episode) => episode.season == saison);
+  
 
 
   // Pour changer de saison
@@ -50,6 +55,20 @@ export default function Cards({ seasons, episodes }) {
           ))}
         </div>
       </div>
+
+      <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
+          Casts
+        </h3>
+
+        <div className="flex flex-wrap justify-center">
+        {casts.map((cast) => (
+     <Cast data={cast}  />
+     ))}
+        </div>
+
+
+
+  
     </>
   );
 }
