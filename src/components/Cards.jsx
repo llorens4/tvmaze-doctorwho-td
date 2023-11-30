@@ -26,9 +26,9 @@ export default function Cards({ seasons, episodes }) {
   return (
     <>
       <div className="">
-        <h1 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
+        <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
           Episode
-        </h1>
+        </h3>
 
         <ul className=" text-2xl text-white flex flex-wrap justify-center ">
           {seasons.map((saison, i) => (
