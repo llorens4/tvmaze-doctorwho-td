@@ -8,7 +8,8 @@ export default function App() {
       <header className="flex bg-mon-bg text-white flex-row items-center font-BBC py-2">
         <Head />
       </header>
-      <main className="flex flex-row  h-min-screen w-max-screen bg-mon-bg bg-galactic font-BBC">
+      <main className="flex flex-row  h-min-screen w-max-screen bg-mon-bg bg-galactic font-BBC bg-cover">
+        <p>hello</p>
         <Mydata />
       </main>
       <footer>
