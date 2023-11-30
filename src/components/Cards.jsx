@@ -44,7 +44,7 @@ export default function Cards({ seasons, episodes }) {
           ))}
         </ul>
 
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           {episodesSaison.map((episode) => (
             <EpisodeCard data={episode} id={episode.id} />
           ))}
