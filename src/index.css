@@ -6,10 +6,14 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "gotham-rounded-ssm-medium";
-    src: url("/gotham-rounded-ssm-medium.ttf");
+    font-family: "CCTimelord.ttf";
+    src: url("/CCtimelord.ttf");
 }
 
+@font-face {
+    font-family: "BBCReithSans_W_Rg.woff";
+    src: url("/BBCReithSans_W_Rg.woff");
+}
 
 @layer base {
     :root {
