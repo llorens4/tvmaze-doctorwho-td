@@ -10,11 +10,11 @@ export default function Head() {
         className="max-w-[15rem]"
       />
       <div className="">
-        <button>Accueil</button>
-        <button>Episode</button>
-        <button>Cast</button>
-        <button>Gallery</button>
-        <button>News</button>
+        <button className="m-4 pt-5">Accueil</button>
+        <button  className="m-4">Episode</button>
+        <button  className="m-4">Cast</button>
+        <button  className="m-4">Gallery</button>
+        <button  className="m-4">News</button>
       </div>
     </>
   );
