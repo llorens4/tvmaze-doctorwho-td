@@ -22,6 +22,9 @@ export default {
         CCtimelord:['CCTimelord'],
         BBC:['BBCReithSans_W_Rg'],
       },
+      colors: {
+        "gold": "var(--gold)",
+      }
     },
   },
   plugins: [],
