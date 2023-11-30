@@ -9,7 +9,6 @@ export default function App() {
         <Head />
       </header>
       <main className="flex flex-row  h-min-screen w-max-screen bg-mon-bg bg-galactic font-BBC">
-        <p>hello</p>
         <Mydata />
       </main>
       <footer>
