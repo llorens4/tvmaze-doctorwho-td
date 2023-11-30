@@ -8,7 +8,8 @@ export default {
         "galaxian-texture": "url('/space-hi-res.png')",
         "vortex-texture":
           "url('/page-space-background.707d4cca4aee555f43c23f52f1e8e759.png')",
-          "galactic":"url('/stars-hires.png'), url('/space-hi-res.png')"
+          "galactic":"url('/stars-hires.png'), url('/space-hi-res.png')",
+        
       },
       backgroundColor: {
         "mon-bg": "var(--mon-bg)",
