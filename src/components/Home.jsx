@@ -1,14 +1,12 @@
 export default function Home() {
   return (
     <>
-      <div className="m-10 flex flex-row">
-        <div className="">
+      <section className="m-10 flex flex-col justify-center text-center">
           <img
             src="https://static.tvmaze.com/uploads/images/original_untouched/486/1217364.jpg"
             alt="logo doctor who"
-            className="h-auto w-2/5"
+            className="justify-center max-w-xl"
           />
-        </div>
 
         <div>
           <h1 className="text-white">
@@ -17,7 +15,7 @@ export default function Home() {
             terror, fun, chases, joy and monsters.
           </h1>
         </div>
-      </div>
+      </section>
     </>
   );
 }
