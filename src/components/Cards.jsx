@@ -26,13 +26,23 @@ export default function Cards({ seasons, episodes }) {
   return (
     <>
       <div className="">
-        <h1 className=" ml-10 text-2xl font-semibold text-white ">Episode</h1>
+        <h1 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
+          Episode
+        </h1>
 
-        <ul className=" ml-10 mt-10 text-lg font-medium text-white grid-cols-13 grid-flow-col grid grid-rows-1 ">
-          {seasons.map((saison,i)=> <li key = {saison.id}><button data-saison = {i+1} onClick={handlerClick} >{saison.number}</button></li>)}
+        <ul className=" text-2xl text-white flex flex-wrap justify-center ">
+          {seasons.map((saison, i) => (
+            <li key={saison.id}>
+              <button
+                data-saison={i + 1}
+                onClick={handlerClick}
+                className="mx-4 py-2 transition-all duration-500 text-white hover:text-gold border-b-gold"
+              >
+                Saison {saison.number}
+              </button>
+            </li>
+          ))}
         </ul>
-
-   
 
         <div className="flex flex-wrap">
           {episodesSaison.map((episode) => (
