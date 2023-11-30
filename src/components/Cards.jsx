@@ -21,7 +21,7 @@ export default function Cards({ data }) {
           <li>S12</li>
           <li>S13</li>
         </ul>
-        <div className="grid-cols-6 grid-flow-col grid grid-rows-2">
+        <div className="flex flex-wrap">
           {dataSaison.map((episode) => (
             <EpisodeCard data={episode} id={episode.id} />
           ))}
