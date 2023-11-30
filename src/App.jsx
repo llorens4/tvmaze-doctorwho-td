@@ -1,5 +1,5 @@
 import Head from "./components/Head";
-
+import Home from "./components/Home";
 
 import Mydata from "./components/Mydata";
 export default function App() {
@@ -9,6 +9,7 @@ export default function App() {
         <Head />
       </header>
       <main className="flex h-min-screen w-max-screen bg-mon-bg bg-galactic font-BBC bg-cover">
+        <Home />
         <Mydata />
       </main>
       <footer>
