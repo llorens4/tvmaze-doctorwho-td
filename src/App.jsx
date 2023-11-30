@@ -1,5 +1,6 @@
 import Head from "./components/Head";
 import Home from "./components/Home";
+import Gallery from "./components/Gallery";
 
 import Mydata from "./components/Mydata";
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <main className="flex flex-col h-min-screen w-max-screen bg-mon-bg bg-galactic font-BBC bg-cover text-white">
         <Home />
         <Mydata />
+        <Gallery />
       </main>
 
       <footer>
