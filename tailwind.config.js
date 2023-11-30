@@ -16,6 +16,7 @@ export default {
       },
       textColor: {
         "txt_white": "var(--white)",
+        "gold": "var(--gold)",
       },
             fontFamily: {
         CCtimelord:['CCTimelord'],
