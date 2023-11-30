@@ -7,7 +7,7 @@ const Mydata = () => {
 
   // const urlepisode = `https://api.tvmaze.com/shows/210/episodes?embed[]=episodes&embed[]=cast?embed[]=seasons`;
   const urlepisode = `https://api.tvmaze.com/shows/210?embed[]=cast&embed[]=seasons&embed[]=episodes`;
-  const urlimg = `https://api.tvmaze.com/shows/210/images`;
+  const urlimage = `https://api.tvmaze.com/shows/210/images`;
   const [url, setUrl] = useState(urlepisode);
   const [url2, setUrl2] = useState(urlimage);
 
