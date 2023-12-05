@@ -25,7 +25,13 @@ export default {
       },
       colors: {
         "gold": "var(--gold)",
-      }
+      },
+      fontSize: {
+        
+        'petit': ['12px', {
+          letterSpacing: '-0.01em',
+        }],
+      },
     },
   },
   plugins: [],

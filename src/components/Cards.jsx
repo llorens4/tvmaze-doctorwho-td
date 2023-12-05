@@ -60,7 +60,7 @@ export default function Cards({ seasons, episodes, casts}) {
           Casts
         </h3>
 
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center ">
         {casts.map((cast) => (
      <Cast data={cast}  />
      ))}
