@@ -57,24 +57,23 @@ export default function Cards({ seasons, episodes, casts, affiches }) {
         </div>
       </div>
 
-      <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
-        Casts
-      </h3>
+      <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">Casts</h3>
 
-      <div className="flex flex-wrap justify-center ">
+      <div className="flex overflow-x-scroll ">
         {casts.map((cast) => (
           <Cast data={cast} />
         ))}
       </div>
 
+      <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
+        Gallery
+      </h3>
 
-      <div className="flex flex-wrap justify-center ">
-
+      <div className="flex overflow-x-scroll ">
         {affiches.map((affiche) => (
           <Gallery_card data={affiche} />
         ))}
       </div>
-
     </>
   );
 }

@@ -10,15 +10,11 @@ export default function App() {
         <Head />
       </header>
 
-      <main className="flex flex-col h-min-screen w-max-screen bg-mon-bg bg-galactic font-BBC bg-cover text-white">
+      <main className="flex flex-col h-min-screen w-max-screen bg-mon-bg bg-galactic font-BBC text-white">
         <Home />
         <Mydata />
 
       </main>
-
-      <footer>
-        <p> hello</p>
-      </footer>
     </>
   );
 }
