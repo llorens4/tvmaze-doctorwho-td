@@ -64,16 +64,19 @@ export default function Cards({ seasons, episodes, casts, affiches }) {
           <Cast data={cast} />
         ))}
       </div>
-
+      
       <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
         Gallery
       </h3>
-
+     
       <div className="flex overflow-x-scroll ">
+         <section className="overflow-hidden">
         {affiches.map((affiche) => (
           <Gallery_card data={affiche} />
         ))}
+              </section>
       </div>
+
     </>
   );
 }
