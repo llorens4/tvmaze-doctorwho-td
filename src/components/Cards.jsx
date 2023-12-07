@@ -5,15 +5,14 @@ import Gallery_card from './Gallery_card';
 
 import { useState } from "react";
 
-export default function Cards({ seasons, episodes, casts, affiches} ) {
+export default function Cards({ seasons, episodes, casts, affiches }) {
 
 
   // seasons est un tableau contenant toutes les saisons
   // episodes est un tableau contenant tous les épisodes
 
   // La saison séléctionnée
-  const [saison, setSaison] = useState(1);
-   
+  const [saison, setSaison] = useState(1)
 
 
 
@@ -28,9 +27,11 @@ export default function Cards({ seasons, episodes, casts, affiches} ) {
     e.preventDefault()
     setSaison(e.target.dataset.saison)
   }
+
+
   return (
     <>
-      
+      <div className="">
         <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
           Episode
         </h3>
@@ -54,30 +55,24 @@ export default function Cards({ seasons, episodes, casts, affiches} ) {
             <EpisodeCard data={episode} id={episode.id} />
           ))}
         </div>
-  
+      </div>
 
-     
-        <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
-          Casts
-        </h3>
+      <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">Casts</h3>
 
-        <div className="flex overflow-x-scroll snap-mandatory scrollbar">
-          {casts.map((cast) => (
-            <Cast data={cast} />
-          ))}
-        </div>
-   
+      <div className="flex overflow-x-scroll snap-mandatory scrollbar">
+        {casts.map((cast) => (
+          <Cast data={cast} />
+        ))}
+      </div>
 
-    
-        <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
-          Gallery
-        </h3>
-        <div className=" flex overflow-x-scroll snap-mandatory scrollbar">
-          {affiches.map((affiche) => (
-            <Gallery_card data={affiche} />
-          ))}
-        </div>
-   
+      <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
+        Gallery
+      </h3>
+      <div className=" flex overflow-x-scroll snap-mandatory scrollbar">
+        {affiches.map((affiche) => (
+          <Gallery_card data={affiche} />
+        ))}
+      </div>
     </>
   );
 }
