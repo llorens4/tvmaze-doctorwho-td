@@ -1,7 +1,10 @@
 export default function Home() {
   return (
     <>
-      <section className="m-10 flex flex-col justify-center text-center items-center">
+      <section
+        className="m-10 flex flex-col justify-center text-center items-center"
+        // ref={introRef}
+      >
         <img
           src="https://static.tvmaze.com/uploads/images/original_untouched/486/1217372.jpg"
           alt="logo doctor who"

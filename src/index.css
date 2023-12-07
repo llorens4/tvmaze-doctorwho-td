@@ -25,4 +25,24 @@
         --primary__200: hsl(200, 60%, 94%);
         --primary__300: hsl(200, 90%, 89%);
     }
+        @layer utilities {
+            .scrollbar::-webkit-scrollbar {
+                width: 20px;
+                height: 20px;
+            }
+    
+            .scrollbar::-webkit-scrollbar-track {
+                border-radius: 100vh;
+                background: #0A0B16;
+            }
+    
+            .scrollbar::-webkit-scrollbar-thumb {
+                background: #FFC67E;
+                border-radius: 100vh;
+            }
+    
+            .scrollbar::-webkit-scrollbar-thumb:hover {
+                background: #F8C6B0;
+            }
+        }
 }
