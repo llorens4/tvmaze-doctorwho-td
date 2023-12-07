@@ -12,7 +12,7 @@ export default function Cards({ seasons, episodes, casts, affiches} ) {
   // episodes est un tableau contenant tous les épisodes
 
   // La saison séléctionnée
-  const [saison, setSaison] = useState(1)
+  const [saison, setSaison] = useState(1);
    
 
 
@@ -30,7 +30,7 @@ export default function Cards({ seasons, episodes, casts, affiches} ) {
   }
   return (
     <>
-      <section >
+      
         <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
           Episode
         </h3>
@@ -54,9 +54,9 @@ export default function Cards({ seasons, episodes, casts, affiches} ) {
             <EpisodeCard data={episode} id={episode.id} />
           ))}
         </div>
-      </section>
+  
 
-      <section >
+     
         <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
           Casts
         </h3>
@@ -66,9 +66,9 @@ export default function Cards({ seasons, episodes, casts, affiches} ) {
             <Cast data={cast} />
           ))}
         </div>
-      </section>
+   
 
-      <section >
+    
         <h3 className=" ml-10 text-4xl font-CCtimelord text-white py-8">
           Gallery
         </h3>
@@ -77,7 +77,7 @@ export default function Cards({ seasons, episodes, casts, affiches} ) {
             <Gallery_card data={affiche} />
           ))}
         </div>
-      </section>
+   
     </>
   );
 }
